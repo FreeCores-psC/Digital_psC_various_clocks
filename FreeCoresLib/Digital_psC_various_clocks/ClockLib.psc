@@ -16,6 +16,7 @@
 //  CTimerClk_T      Generates a clock using the built-in timer.
 //
 //  CTwoPhasesClk_T  Generates a two phase clock.
+
 //
 // ===================================================================
 // TEST BENCH:
@@ -23,10 +24,12 @@
 //    - There is a single test bench project for all cores: main.rpj
 //
 // ===================================================================
+
 // 
 // Copyright ICI Techno 2016-2023, see LICENSE.
 //
 // ===================================================================
+
 
 library ClockLib
 {
@@ -159,6 +162,7 @@ library ClockLib
         }
     };
     
+
     // -------------------------------------------------------------------
     // This core template generates a two phase clock following this pattern:
     //    oClkPhase0     0011000000110000001100000011
