@@ -16,6 +16,7 @@
 //  CTimerClk_T      Generates a clock using the built-in timer.
 //
 //  CTwoPhasesClk_T  Generates a two phase clock.
+
 //
 // ===================================================================
 // TEST BENCH:
@@ -23,10 +24,12 @@
 //    - There is a single test bench project for all cores: main.rpj
 //
 // ===================================================================
+
 // 
 // Copyright ICI Techno 2016-2023, see LICENSE.
 //
 // ===================================================================
+
 
 library ClockLib
 {
@@ -114,14 +117,14 @@ library ClockLib
     {
         start()
         {
-            startTimer(PEDIOD - 1);
+            startTimer((long)(PERIOD - 1));
             oClk = 0t;
         }
     
         timerEnd()
         {
             oClk = !oClk;
-            startTimer(PEDIOD - 1);
+            startTimer((long)(PERIOD - 1));
         }
     };    
     
@@ -159,6 +162,7 @@ library ClockLib
         }
     };
     
+
     // -------------------------------------------------------------------
     // This core template generates a two phase clock following this pattern:
     //    oClkPhase0     0011000000110000001100000011
@@ -192,13 +196,13 @@ library ClockLib
             if(Counter == cQuarterPeriod - 1)
             {
                 State++;
-                Counter = 0;
+                Counter = (uint:cSizeOfCounter)0;
                 switch(State)
                 { 
-                    case 0: oClkPhase0 = 0; oClkPhase1 = 0;
-                    case 1: oClkPhase0 = 1; oClkPhase1 = 0;
-                    case 2: oClkPhase0 = 0; oClkPhase1 = 0;
-                    case 3: oClkPhase0 = 0; oClkPhase1 = 1;
+                    case 0: oClkPhase0 = 0t; oClkPhase1 = 0t;
+                    case 1: oClkPhase0 = 1t; oClkPhase1 = 0t;
+                    case 2: oClkPhase0 = 0t; oClkPhase1 = 0t;
+                    case 3: oClkPhase0 = 0t; oClkPhase1 = 1t;
                 }
             }
             else

@@ -1,11 +1,11 @@
 [*]
 [*] GTKWave Analyzer v3.3.87 (w)1999-2017 BSI
-[*] Wed Mar 08 22:01:50 2023
+[*] Thu Mar 30 23:39:25 2023
 [*]
-[dumpfile] "H:\012_OpenCores\_various_clocks\targets\Simulation.vcd"
-[dumpfile_mtime] "Wed Mar 08 22:00:58 2023"
-[dumpfile_size] 27603
-[savefile] "H:\012_OpenCores\_various_clocks\targets\Simulation.sav"
+[dumpfile] "H:\012_GitHub_FreeCores-psC\Digital_psC_various_clocks\targets\Simulation.vcd"
+[dumpfile_mtime] "Thu Mar 30 23:39:04 2023"
+[dumpfile_size] 23693
+[savefile] "H:\012_GitHub_FreeCores-psC\Digital_psC_various_clocks\targets\Simulation.sav"
 [timestart] 0
 [size] 1423 600
 [pos] -1 -1
@@ -14,16 +14,17 @@
 [signals_width] 126
 [sst_expanded] 1
 [sst_vpaned_height] 153
-@29
-top.oSimpleClk
 @28
+top.oSimpleClk
 top.oSimpleClkN
-top.oTimerClk
 top.oPulseClk
+@29
 top.oEventClk_ev
-top.oPhaseClk0
-top.oPhaseClk1
+@28
 top.oGateReset
 top.oGateRun
+top.oTimerClk
+top.oPhaseClk0
+top.oPhaseClk1
 [pattern_trace] 1
 [pattern_trace] 0
