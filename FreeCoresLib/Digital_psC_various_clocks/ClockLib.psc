@@ -2,6 +2,7 @@
 // This is a library of clock generator cores, some with templates
 // ===================================================================
 // 
+<<<<<<< HEAD
 //  CSimpleClk       Generates a clock half the FPGA frequency
 //
 //  CPulseClk        Using a free running Counter (0 to 31), generates
@@ -16,6 +17,12 @@
 //  CTimerClk_T      Generates a clock using the built-in timer.
 //
 //  CTwoPhasesClk_T  Generates a two phase clock.
+=======
+//  CTimerClk    Uses the timer to generate a clock, output is FPGA clock divided by 50
+//  CPulseClk    A free running Counter (0 to 31), first output is one if Counter = 31 and second output sends an event if Counter = 15
+//  CTwoPhaseClk A free running Counter (0 to 3), phase 0 is one if Counter = 1 and phase 1 is one if Counter = 3 
+//  CGates       A free running Counter (0 to 99), generates controlled signals, reset for 5 <= Counter < 10 and run for 20 <= Counter < 80
+>>>>>>> 1ac5896611e565d47db52150fa121439dd6b833b
 //
 // ===================================================================
 // TEST BENCH:
@@ -23,10 +30,13 @@
 //    - There is a single test bench project for all cores: main.rpj
 //
 // ===================================================================
+<<<<<<< HEAD
 // 
 // Copyright ICI Techno 2016-2023, see LICENSE.
 //
 // ===================================================================
+=======
+>>>>>>> 1ac5896611e565d47db52150fa121439dd6b833b
 
 library ClockLib
 {
@@ -159,6 +169,10 @@ library ClockLib
         }
     };
     
+<<<<<<< HEAD
+=======
+    // Two phases clock
+>>>>>>> 1ac5896611e565d47db52150fa121439dd6b833b
     // -------------------------------------------------------------------
     // This core template generates a two phase clock following this pattern:
     //    oClkPhase0     0011000000110000001100000011
