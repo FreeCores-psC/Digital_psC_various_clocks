@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.87 (w)1999-2017 BSI
+[*] Wed Mar 08 22:01:50 2023
+[*]
+[dumpfile] "H:\012_OpenCores\_various_clocks\targets\Simulation.vcd"
+[dumpfile_mtime] "Wed Mar 08 22:00:58 2023"
+[dumpfile_size] 27603
+[savefile] "H:\012_OpenCores\_various_clocks\targets\Simulation.sav"
+[timestart] 0
+[size] 1423 600
+[pos] -1 -1
+*-9.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@29
+top.oSimpleClk
+@28
+top.oSimpleClkN
+top.oTimerClk
+top.oPulseClk
+top.oEventClk_ev
+top.oPhaseClk0
+top.oPhaseClk1
+top.oGateReset
+top.oGateRun
+[pattern_trace] 1
+[pattern_trace] 0
